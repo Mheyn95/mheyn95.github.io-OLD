@@ -72,7 +72,7 @@ header nav ul li a {
     color: var(--accent-1-color);
     font-size: 18px;
     justify-content: center;
-    overflow: auto;
+    overflow:auto;
 }
 
 .section-header {
@@ -173,25 +173,6 @@ header nav ul li a {
     grid-row: 1 / span 1;
 }
 
-/* .first-project::before {
-    content:"Run Buddy";
-    background-color: var(--accent-2-color);
-    height: 100%;
-    width: 50px;
-    writing-mode: vertical-lr;
-    transform: rotate(180deg);
-    font-size: 25px;
-}
-
-.second-project::before {
-    content:"Horiseon";
-    background-color: var(--accent-2-color);
-    width: 50px;
-    writing-mode: vertical-lr;
-    transform: rotate(180deg);
-    font-size: 25px;
-} */
-
 .run-buddy {
     background-image: url(../images/hero-rb.jpg);
     background-size: cover;
@@ -213,3 +194,105 @@ header nav ul li a {
     width: 100%;
 }
 
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+    
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+      }
+    
+      header h1 {
+        width: 100%;
+        text-align: center;
+      }
+    
+      header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+      }
+    
+      header nav ul li a {
+        font-size: 20px;
+      }
+
+      .hero {
+        justify-content: center;
+      }
+      
+      .section-title {
+        width: 80%;
+      }
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+    
+    section {
+        padding: 30px 15px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .hero {
+        text-align: center;
+        height: 200px;
+    }
+
+    .section-header {
+        border-right: none;
+        border-bottom:  5px solid var(--accent-2-color);
+        width: 100%;
+    }
+    .information p {
+        font-size: 20px;
+    }
+
+    .work-grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        width: 150%;
+        margin: 15px;
+        
+    }
+
+    .first-project{
+        grid-column: 1 / span 2;
+        grid-row: 1 / span 1;
+    }
+
+    .second-project {
+        grid-column: 1 / span 1;
+        grid-row: 2 / span 1;
+    }
+
+    .image {
+        width: 50%;
+        /* height: 30%; */
+        margin: 15px;
+    }
+
+    .contact-links ul {
+        display: block;
+        text-align: center;
+    }
+
+    .contact-links ul li {
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (max-width: 610px) {
+    .image {
+        height: 30%;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .image {
+        width: 60%;
+        height: 20%;
+    }
+}
