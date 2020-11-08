@@ -1,3 +1,4 @@
+/* setting up varaibles */
 :root {
     --primary-color: #f1faee;
     --secondary-color: #a8dadc;
@@ -10,10 +11,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* begin styling the actual content of the site */
 body {
     background-color: var(--primary-color);
     font-family: Helvetica, Arial, sans-serif;
 }
+
+/* begin styling the header and nav section */
 header {
     background-color: var(--accent-2-color);
     padding: 20px 35px;
@@ -49,6 +53,7 @@ header nav ul li a {
 
 }
 
+/* begin styling the hero/jumbotron section (gradient area) */
 .hero {
     background-image: linear-gradient( var(--accent-2-color), var(--accent-1-color), var(--primary-color));
     height: 300px;
@@ -66,6 +71,7 @@ header nav ul li a {
     font-style: italic;
 }
 
+/* begin styling of the main content in the site */
 .section {
     display: flex;
     margin: 15px;
@@ -86,6 +92,7 @@ header nav ul li a {
     font-size: 20px;
 }
 
+/* image of me */
 .image {
     width: 400px;
     height: 300px;
@@ -120,6 +127,7 @@ header nav ul li a {
     color: var(--accent-1-color);
 }
 
+/* grid styling */
 .work-grid-wrapper {
     display: flex;
     width: 100%;
@@ -143,7 +151,7 @@ header nav ul li a {
     align-items: center;
     text-align: center;
     opacity: .5;
-    transition: opacity 1s;
+    transition: opacity .5s;
 }
 
 .work-grid-item:hover {
@@ -195,7 +203,7 @@ header nav ul li a {
     width: 100%;
 }
 
-/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+/* media query for small screens that are bigger than tablets */
 @media screen and (max-width: 980px) {
     
     header {
@@ -228,7 +236,7 @@ header nav ul li a {
       }
 }
 
-/* MEDIA QUERY FOR TABLETS AND SMALLER */
+/* media query for tablets */
 @media screen and (max-width: 768px) {
     
     section {
@@ -285,11 +293,13 @@ header nav ul li a {
 
 }
 
+/* the following media queries adjust the image of me to fit better on small screens */
 @media screen and (max-width: 610px) {
     .image {
         height: 30%;
     }
 }
+
 
 @media screen and (max-width: 470px) {
     .image {
