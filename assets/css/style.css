@@ -189,6 +189,13 @@ header nav ul li a {
     width: 100%;
 }
 
+.password-generator {
+    background-image: url(../images/password-generator-screenshot.png);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
 .horiseon {
     background-image: url(../images/hero-h.jpg);
     background-size: cover;
