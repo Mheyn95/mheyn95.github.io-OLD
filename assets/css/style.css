@@ -205,6 +205,13 @@ header nav ul li a {
   width: 100%;
 }
 
+.trivia-game {
+  background-image: url(../images/trivia-game.png);
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
 .work-schedule {
   background-image: url(../images/work-day.png);
   background-size: cover;
