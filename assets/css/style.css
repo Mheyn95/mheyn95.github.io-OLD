@@ -184,6 +184,13 @@ header nav ul li a {
   grid-row: 1 / span 1;
 }
 
+.devhub {
+  background-image: url(../images/devhub.png);
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
 .weather-board {
   background-image: url(../images/weather.png);
   background-size: cover;
